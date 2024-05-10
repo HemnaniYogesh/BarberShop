@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title> Barber HTML-5 Template </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="{%static 'myapp/assets/img/favicon.ico'%}">
+
+   <!-- CSS here -->
+    <link rel="stylesheet" href="{%static 'myapp/assets/css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{%static 'myapp/assets/css/owl.carousel.min.css'%}">
+    <link rel="stylesheet" href="{%static 'myapp/assets/css/slicknav.css'%}">
+    <link rel="stylesheet" href="{%static 'myapp/assets/css/animate.min.css'%}">
+    <link rel="stylesheet" href="{%static 'myapp/assets/css/magnific-popup.css'%}">
+    <link rel="stylesheet" href="{%static 'myapp/assets/css/fontawesome-all.min.css'%}">
+    <link rel="stylesheet" href="{%static 'myapp/assets/css/themify-icons.css'%}">
+    <link rel="stylesheet" href="{%static 'myapp/assets/css/themify-icons.css'%}">
+    <link rel="stylesheet" href="{%static 'myapp/assets/css/slick.css'%}">
+    <link rel="stylesheet" href="{%static 'myapp/assets/css/nice-select.css'%}">
+    <link rel="stylesheet" href="{%static 'myapp/assets/css/style.css'%}">
+    <style>
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        * {
+          box-sizing: border-box;
+        }
+        input[type=text],
+        select,
+        textarea {
+          width: 100%;
+          padding: 8px;
+          border: 1px solid #eeeeee;
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 8px;
+          margin-bottom: 16px;
+          resize: vertical;
+        }
+        input[type=submit] {
+          background-color: #d19f68;
+          color: #000000;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 7px;
+          cursor: pointer;
+        }
+        input[type=submit]:hover {
+          background-color: #6fe8d7;
+        }
+        .container {
+          border-radius: 8px;
+          background-color: #e6e6e6;
+          padding: 15px;
+        }
+    </style>
+</head>
+  <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="{%static 'myapp/assets/img/logo/loder.png'%}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <!--? Header Start -->
+       <div class="header-area header-transparent pt-20">
+            <div class="main-header header-sticky">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <!-- Logo -->
+                        <div class="col-xl-2 col-lg-2 col-md-1">
+                            <div class="logo">
+                                <img src="{%static 'myapp/assets/img/logo/logo.jpg'%}" alt="Barber Shop">
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-lg-10 col-md-10">
+                            <div class="menu-main d-flex align-items-center justify-content-end">
+                                <!-- Main-menu -->
+                                <div class="main-menu f-right d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li><a href="/#">Home</a></li>
+                                            <li><a href="about">About</a></li>
+                                            <li><a href="services">Services</a></li>
+                                            <li><a href="portfolio">Portfolio</a></li>
+                                            <li><a href="blog">Blog</a></li>
+                                            <li class><a href="contact">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="header-right-btn f-right d-none d-lg-block ml-30">
+                                    <a href="form" class="btn header-btn">became a member</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+    <main>
+        <!--? Hero Start -->
+        <div class="slider-area2">
+            <div class="slider-height2 d-flex align-items-center">
+            </div>
+        </div>
+        <body>
+        <br>
+        <br>
+<h2 align="center">Became a Member</h2>
+<div class="container">
+    <form method="post" id="request" class="main_form" action="form">
+        {%csrf_token%}
+        <label for="fname">Name</label>
+        <input type="text" id="fname" name="fname" placeholder="Type your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname" placeholder="Type your last name..">
+        <label for="phone1">Phone</label>
+        <input type="text" id="phone1" name="phone1">
+        <label for="email">E-mail Address</label>
+        <input type="text" id="email" name="email" placeholder="Type your e-mail..">
+        <label for="purpose">Purpose</label>
+        <textarea id="purpose" name="Purpose" placeholder="Type your message.." style="height:200px"></textarea>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+        </body>
+  </main>
+
+    <!-- Scroll Up -->
+    <div id="back-top" >
+        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    </div>
+
+    <!-- JS here -->
+ <script src="{%static 'myapp/assets/js/vendor/modernizr-3.5.0.min.js'%}"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="{%static 'myapp/assets/js/vendor/jquery-1.12.4.min.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/popper.min.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/bootstrap.min.js'%}"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="{%static 'myapp/assets/js/jquery.slicknav.min.js'%}"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="{%static 'myapp/assets/js/owl.carousel.min.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/slick.min.js'%}"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="{%static 'myapp/assets/js/wow.min.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/animated.headline.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/jquery.magnific-popup.js'%}"></script>
+
+    <!-- Date Picker -->
+    <script src="{%static 'myapp/assets/js/gijgo.min.js'%}"></script>
+    <!-- Nice-select, sticky -->
+    <script src="{%static 'myapp/assets/js/jquery.nice-select.min.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/jquery.sticky.js'%}"></script>
+
+    <!-- counter , waypoint,Hover Direction -->
+    <script src="{%static 'myapp/assets/js/jquery.counterup.min.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/waypoints.min.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/jquery.countdown.min.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/hover-direction-snake.min.js'%}"></script>
+
+    <!-- contact js -->
+    <script src="{%static 'myapp/assets/js/contact.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/jquery.form.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/jquery.validate.min.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/mail-script.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/jquery.ajaxchimp.min.js'%}"></script>
+
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="{%static 'myapp/assets/js/plugins.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/main.js'%}"></script>
+</html>

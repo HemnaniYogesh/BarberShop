@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title> Barber HTML-5 Template </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="{%static 'site.webmanifest'%}">
+    <link rel="shortcut icon" type="image/x-icon" href="{%static 'myapp/assets/img/favicon.ico'%}">
+
+	<!-- CSS here -->
+	<link rel="stylesheet" href="{%static 'myapp/assets/css/bootstrap.min.css'%}">
+	<link rel="stylesheet" href="{%static 'myapp/assets/css/owl.carousel.min.css'%}">
+	<link rel="stylesheet" href="{%static 'myapp/assets/css/slicknav.css'%}">
+    <link rel="stylesheet" href="{%static 'myapp/assets/css/flaticon.css'%}">
+    <link rel="stylesheet" href="{%static 'myapp/assets/css/gijgo.css'%}">
+    <link rel="stylesheet" href="{%static 'myapp/assets/css/animate.min.css'%}">
+    <link rel="stylesheet" href="{%static 'myapp/assets/css/animated-headline.css'%}">
+	<link rel="stylesheet" href="{%static 'myapp/assets/css/magnific-popup.css'%}">
+	<link rel="stylesheet" href="{%static 'myapp/assets/css/fontawesome-all.min.css'%}">
+	<link rel="stylesheet" href="{%static 'myapp/assets/css/themify-icons.css'%}">
+	<link rel="stylesheet" href="{%static 'myapp/assets/css/slick.css'%}">
+	<link rel="stylesheet" href="{%static 'myapp/assets/css/nice-select.css'%}">
+	<link rel="stylesheet" href="{%static 'myapp/assets/css/style.css'%}">
+</head>
+{%include 'myapp/header.html'%}
+<br>
+<br>
+<br>
+<br>
+<br>
+<body>
+<div class="best-pricing section-padding2 position-relative"><br>
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-xl-7 col-lg-7">
+                        <div class="section-tittle mb-50">
+                            <h1> Our Best Pricing</h1>
+                            <h2>We provide best price<br> in the city!</h2>
+                        </div>
+                        <!-- Pricing  -->
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <h1>Hair Style</h1>
+                                {%for i in data%}
+                                <div class="pricing-list">
+                                    <ul>
+                                        <p></p>
+                                        <li>{{i.hairstyle}}. . . . . . . . . . . . . . . . . . . . .<span>Rs.{{i.price}}</span></li>
+                                    </ul>
+                                </div>
+                                {%endfor%}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- pricing img -->
+            <div class="pricing-img">
+              <img class="pricing-img2" src="{%static 'myapp/assets/img/gallery/about.png'%}" alt="">
+            </div>
+        </div>
+{%include 'myapp/footer.html'%}
+</body>
+</html>

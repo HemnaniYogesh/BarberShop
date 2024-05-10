@@ -1,0 +1,207 @@
+<!doctype html>
+{%load static%}
+<html class="no-js" lang="zxx">
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title> Barber HTML-5 Template </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="{%static 'site.webmanifest'%}">
+    <link rel="shortcut icon" type="image/x-icon" href="{%static 'myapp/assets/img/favicon.ico'%}">
+
+	<!-- CSS here -->
+	<link rel="stylesheet" href="{%static 'myapp/assets/css/bootstrap.min.css'%}">
+	<link rel="stylesheet" href="{%static 'myapp/assets/css/owl.carousel.min.css'%}">
+	<link rel="stylesheet" href="{%static 'myapp/assets/css/slicknav.css'%}">
+    <link rel="stylesheet" href="{%static 'myapp/assets/css/flaticon.css'%}">
+    <link rel="stylesheet" href="{%static 'myapp/assets/css/gijgo.css'%}">
+    <link rel="stylesheet" href="{%static 'myapp/assets/css/animate.min.css'%}">
+    <link rel="stylesheet" href="{%static 'myapp/assets/css/animated-headline.css'%}">
+	<link rel="stylesheet" href="{%static 'myapp/assets/css/magnific-popup.css'%}">
+	<link rel="stylesheet" href="{%static 'myapp/assets/css/fontawesome-all.min.css'%}">
+	<link rel="stylesheet" href="{%static 'myapp/assets/css/themify-icons.css'%}">
+	<link rel="stylesheet" href="{%static 'myapp/assets/css/slick.css'%}">
+	<link rel="stylesheet" href="{%static 'myapp/assets/css/nice-select.css'%}">
+	<link rel="stylesheet" href="{%static 'myapp/assets/css/style.css'%}">
+</head>
+<body>
+    <!-- ? Preloader Start -->
+    <main>
+        <!--? Hero Start -->
+        <div class="slider-area2">
+            <div class="slider-height2 d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="hero-cap hero-cap2 pt-70 text-center">
+                                <h2>About US</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+        <!--? About Area Start -->
+        <section class="about-area section-padding30 position-relative">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-11">
+                        <!-- about-img -->
+                        <div class="about-img ">
+                            <img src="{%static 'myapp/assets/img/gallery/about.png'%}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-caption">
+                            <!-- Section Tittle -->
+                            <div class="section-tittle section-tittle3 mb-35">
+                                <span>About Our company</span>
+                                <h2>52 Years Of Experience In Hair cut!</h2>
+                            </div>
+                            <p class="mb-30 pera-bottom">We present our services with flexible, convenient and perfect layouts. You can select your favorite layouts & elements for Hair Cut with unlimited customization possibilities. Pixel-perfection of the designers is intended.</p>
+                            <p class="pera-top mb-50">We present our services with flexible, convenient and purposeful layouts. You can select your favorite.</p>
+                            <img src="{%static 'myapp/assets/img/gallery/signature.png'%}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+<br>
+            <br>
+
+<br>        <!--? Team Start -->
+        <div class="team-area pb-280">
+            <div class="container">
+                <!-- Section Tittle -->
+                <div class="row justify-content-center">
+                    <div class="col-xl-8 col-lg-8 col-md-11 col-sm-11">
+                        <div class="section-tittle text-center mb-100">
+                            <h1>Professional Teams</h1><br>
+                            <br>
+                            <h2>Our award winner hair cut experts for you</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row team-active dot-style">
+                    <!-- single Tem -->
+                     {%for i in data%}
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                        <div class="single-team mb-80 text-center">
+                            <div class="team-img">
+                                <img src="{{i.img.url}}" alt="">
+                            </div>
+                            <div class="team-caption">
+                                <span>{{i.designation}}</span>
+                                <h3><a href="#">{{i.detail}}</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    {%endfor%}
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+        </section>
+    </main>
+    <!-- Preloader Start -->
+<div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="{%static 'myapp/assets/img/logo/loder.png'%}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <!--? Header Start -->
+        <div class="header-area header-transparent pt-20">
+            <div class="main-header header-sticky">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <!-- Logo -->
+                        <div class="col-xl-2 col-lg-2 col-md-1">
+                            <div class="logo">
+                                <img src="{%static 'myapp/assets/img/logo/logo.jpg'%}" alt="Barber Shop">
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-lg-10 col-md-10">
+                            <div class="menu-main d-flex align-items-center justify-content-end">
+                                <!-- Main-menu -->
+                                <div class="main-menu f-right d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li><a href="/#">Home</a></li>
+                                            <li class="active"><a href="about">About</a></li>
+                                            <li><a href="services">Services</a></li>
+                                            <li><a href="portfolio">Portfolio</a></li>
+                                            <li><a href="blog">Blog</a></li>
+                                            <li><a href="contact">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="header-right-btn f-right d-none d-lg-block ml-30">
+                                    <a href="form" class="btn header-btn">became a member</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+   {%include 'myapp/footer.html'%}
+    <!-- Scroll Up -->
+    <div id="back-top" >
+        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    </div>
+
+    <!-- JS here -->
+
+    <script src="{%static 'myapp/assets/js/vendor/modernizr-3.5.0.min.js'%}"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="{%static 'myapp/assets/js/vendor/jquery-1.12.4.min.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/popper.min.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/bootstrap.min.js'%}"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="{%static 'myapp/assets/js/jquery.slicknav.min.js'%}"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="{%static 'myapp/assets/js/owl.carousel.min.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/slick.min.js'%}"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="{%static 'myapp/assets/js/wow.min.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/animated.headline.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/jquery.magnific-popup.js'%}"></script>
+
+    <!-- Date Picker -->
+    <script src="{%static 'myapp/assets/js/gijgo.min.js'%}"></script>
+    <!-- Nice-select, sticky -->
+    <script src="{%static 'myapp/assets/js/jquery.nice-select.min.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/jquery.sticky.js'%}"></script>
+
+    <!-- counter , waypoint,Hover Direction -->
+    <script src="{%static 'myapp/assets/js/jquery.counterup.min.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/waypoints.min.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/jquery.countdown.min.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/hover-direction-snake.min.js'%}"></script>
+
+    <!-- contact js -->
+    <script src="{%static 'myapp/assets/js/contact.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/jquery.form.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/jquery.validate.min.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/mail-script.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/jquery.ajaxchimp.min.js'%}"></script>
+
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="{%static 'myapp/assets/js/plugins.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/main.js'%}"></script>
+    </body>
+</html>

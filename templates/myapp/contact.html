@@ -1,0 +1,244 @@
+<!doctype html>
+{%load static%}
+<html class="no-js" lang="zxx" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title> Barber HTML-5 Template </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="{%static 'myapp/assets/img/favicon.ico'%}">
+
+   <!-- CSS here -->
+    <link rel="stylesheet" href="{%static 'myapp/assets/css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{%static 'myapp/assets/css/owl.carousel.min.css'%}">
+    <link rel="stylesheet" href="{%static 'myapp/assets/css/slicknav.css'%}">
+    <link rel="stylesheet" href="{%static 'myapp/assets/css/animate.min.css'%}">
+    <link rel="stylesheet" href="{%static 'myapp/assets/css/magnific-popup.css'%}">
+    <link rel="stylesheet" href="{%static 'myapp/assets/css/fontawesome-all.min.css'%}">
+    <link rel="stylesheet" href="{%static 'myapp/assets/css/themify-icons.css'%}">
+    <link rel="stylesheet" href="{%static 'myapp/assets/css/themify-icons.css'%}">
+    <link rel="stylesheet" href="{%static 'myapp/assets/css/slick.css'%}">
+    <link rel="stylesheet" href="{%static 'myapp/assets/css/nice-select.css'%}">
+    <link rel="stylesheet" href="{%static 'myapp/assets/css/style.css'%}">
+</head>
+    <!--? Preloader Start -->
+   <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="{%static 'myapp/assets/img/logo/loder.png'%}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <!--? Header Start -->
+       <div class="header-area header-transparent pt-20">
+            <div class="main-header header-sticky">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <!-- Logo -->
+                        <div class="col-xl-2 col-lg-2 col-md-1">
+                            <div class="logo">
+                                <img src="{%static 'myapp/assets/img/logo/logo.jpg'%}" alt="Barber Shop">
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-lg-10 col-md-10">
+                            <div class="menu-main d-flex align-items-center justify-content-end">
+                                <!-- Main-menu -->
+                                <div class="main-menu f-right d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li><a href="/#">Home</a></li>
+                                            <li><a href="about">About</a></li>
+                                            <li><a href="services">Services</a></li>
+                                            <li><a href="portfolio">Portfolio</a></li>
+                                            <li><a href="blog">Blog</a></li>
+                                            <li class="active"><a href="contact">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="header-right-btn f-right d-none d-lg-block ml-30">
+                                    <a href="form" class="btn header-btn">became a member</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+    <main>
+        <!--? Hero Start -->
+        <div class="slider-area2">
+            <div class="slider-height2 d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="hero-cap hero-cap2 pt-70 text-center">
+                                <h2>Contact Us</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+        <!--?  Contact Area start  -->
+      <br>
+        <br>
+                       <!-- Form -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 offset-md-1">
+      <span class="anchor" id="formComplex"></span>
+      <div id="appointmetForm">
+          <h1 >Appointment Form</h1>
+          <p>Make an appointment with us today!!!</p>
+        </div>
+      <hr class="my-5">
+
+        <form method="post" id="request" class="main_form" action="contact">
+                              {%csrf_token%}
+        <div class="form-row mt-4">
+          <div class="col-sm-6 pb-3">
+            <label>First Name</label>
+            <input type="text" class="form-control" name="fname" id="fname" >
+          </div>
+          <div class="col-sm-6 pb-3">
+            <label>Last Name</label>
+            <input type="text" class="form-control" name="lname" id="lname" >
+          </div>
+          <div class="col-sm-4 pb-3">
+            <label for="phone">Phone</label>
+            <input type="text" class="form-control" name="phone" id="phone" >
+          </div>
+          <div class="col-sm-6 pb-3">
+            <label for="email">Email</label>
+            <input type="text" class="form-control" name="email" id="email">
+          </div>
+          <div class="col-sm-3 pb-3">
+            <label for="barber">Barber</label><br>
+            <select id="barber" name="barber1" required="true">
+              <option value="Lucifer">Lucifer</option>
+              <option value="Harry" selected="selected">Harry</option>
+              <option value="Sam">Sam</option>
+            </select>
+          </div>
+          <div class="col-sm-3 pb-3">
+            <label>Date</label><br>
+            <input required="true" type="date" name="date1" placeholder="DD-MM-YYYY">
+          </div>
+          <div class="col-sm-3 pb-3">
+            <label> Time </label><br>
+            <select name="time1">
+              <option value="9am-10am" >9am-10am</option>
+              <option value="11am-12pm">11am-12pm</option>
+              <option value="12pm-1pm">12pm-1pm</option>
+              <option value="2pm-3pm">2pm-3pm</option>
+              <option value="3pm-4pm">3pm-4pm</option>
+              <option selected="selected" value="4pm-5pm">4pm-5pm</option>
+              <option value="5pm-6pm">5pm-6pm</option>
+              <option value="6pm-7pm">6pm-7pm</option>
+              <option value="7pm-8pm">7pm-8pm</option>
+            </select>
+          </div>
+          <div class="col-md-12 pb-3">
+            <label>Comments</label>
+            <textarea type="text" class="form-control" name="comment"/></textarea>
+            <small class="text-info">
+              Let us know of any special detail needed.
+            </small>
+          </div>
+          <div class="col-md-12 pb-3 pt-4">
+            <button type="submit" name="submit" class="btn btn-info btn-lg btn-block" id="submit-form">Submit</button>
+          </div>
+        </div>
+      </form>
+
+                    </div>
+                    <div class="col-lg-3 offset-lg-1">
+                        <div class="media contact-info">
+                            <span class="contact-info__icon"><i class="ti-home"></i></span>
+                            <div class="media-body">
+                                <h3>Gujarat, India.</h3>
+                                <p>Ahmedabad, 3871110</p>
+                            </div>
+                        </div>
+                        <div class="media contact-info">
+                            <span class="contact-info__icon"><i class="ti-tablet"></i></span>
+                            <div class="media-body">
+                                <h3>+91 142 565 2365</h3>
+                                <p>Mon to Sun 9am to 8pm</p>
+                            </div>
+                        </div>
+                        <div class="media contact-info">
+                            <span class="contact-info__icon"><i class="ti-email"></i></span>
+                            <div class="media-body">
+                                <h3>barber@gmail.com</h3>
+                                <p>Send us your query anytime!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    </div>
+        </section>
+        <!-- Contact Area End -->
+    </main>
+   {%include 'myapp/footer.html'%}
+    <!-- Scroll Up -->
+    <div id="back-top" >
+        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    </div>
+
+    <!-- JS here -->
+ <script src="{%static 'myapp/assets/js/vendor/modernizr-3.5.0.min.js'%}"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="{%static 'myapp/assets/js/vendor/jquery-1.12.4.min.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/popper.min.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/bootstrap.min.js'%}"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="{%static 'myapp/assets/js/jquery.slicknav.min.js'%}"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="{%static 'myapp/assets/js/owl.carousel.min.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/slick.min.js'%}"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="{%static 'myapp/assets/js/wow.min.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/animated.headline.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/jquery.magnific-popup.js'%}"></script>
+
+    <!-- Date Picker -->
+    <script src="{%static 'myapp/assets/js/gijgo.min.js'%}"></script>
+    <!-- Nice-select, sticky -->
+    <script src="{%static 'myapp/assets/js/jquery.nice-select.min.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/jquery.sticky.js'%}"></script>
+
+    <!-- counter , waypoint,Hover Direction -->
+    <script src="{%static 'myapp/assets/js/jquery.counterup.min.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/waypoints.min.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/jquery.countdown.min.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/hover-direction-snake.min.js'%}"></script>
+
+    <!-- contact js -->
+    <script src="{%static 'myapp/assets/js/contact.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/jquery.form.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/jquery.validate.min.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/mail-script.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/jquery.ajaxchimp.min.js'%}"></script>
+
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="{%static 'myapp/assets/js/plugins.js'%}"></script>
+    <script src="{%static 'myapp/assets/js/main.js'%}"></script>
+
+    </body>
+</html>
